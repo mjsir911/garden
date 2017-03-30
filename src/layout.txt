@@ -1,0 +1,11 @@
+Plants
+-------
+ID, Name, Type, Owner
+
+People
+-------
+ID, Name, email, phone
+
+Log
+------
+Plant _ ID, plant humidity, office humidity, office temp
