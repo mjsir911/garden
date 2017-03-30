@@ -7,7 +7,6 @@
 *.dbf
 *.mdb
 *.pdb
-*.sql
 
 ### Linux ###
 *~
