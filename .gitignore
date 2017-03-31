@@ -182,3 +182,6 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/vim,macos,linux,python,windows,database
+
+#Marco
+*.auth
