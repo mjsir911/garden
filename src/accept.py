@@ -37,7 +37,9 @@ with open("mqtt.auth", "r") as file:
     credentials = file.readline().split()
 
 mqttc = MyClient(server, credentials)
+
 for i in range(4):
     mqttc.subscribe('plants/{}/moisture'.format(i))
+
 while True:
     mqttc.loop()
