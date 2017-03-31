@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import sqlite3
+import datetime
 from os import path
 
 __appname__     = ""
@@ -25,11 +26,6 @@ def __init__():
             cmds = contents.split(';')
             for cmd in cmds:
                 conn.execute(cmd)
-
-
-
-
-import datetime
 
 def logplant(id, humidity):
     with sqlite3.connect(db) as conn:
@@ -60,4 +56,6 @@ def logoffice(temp, humidity):
 #addvalues({1: 5, 2: 6, 3: 100, 4: 1})
 #addvalue(1, 3)
 __init__()
-logoffice(50, 30)
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()
